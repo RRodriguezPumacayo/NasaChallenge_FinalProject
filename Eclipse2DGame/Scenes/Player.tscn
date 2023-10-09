@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/Scrips/Player.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/AnimationTree.tscn" type="PackedScene" id=2]
+[ext_resource path="res://salto.wav" type="AudioStream" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 15, 20.5 )
@@ -18,5 +19,8 @@ position = Vector2( -2, 8 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 5.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

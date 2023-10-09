@@ -12,7 +12,7 @@ export(int) var FRICION = 10
 export(int) var GRAVITY = 5
 export(int) var ADDITIONAL_FALL_GRAVITY = 10
 
-var velocity = Vector2.ZERO;
+var velocity = Vector2.ZERO; 
 
 onready var sprite = $AnimPlayer/Sprite
 onready var animTree = $AnimPlayer/AnimationTree
@@ -35,6 +35,7 @@ func _physics_process(delta):
 	if is_on_floor():
 		
 		if Input.is_action_pressed("ui_up"):
+			$AudioStreamPlayer.play()
 			velocity.y = JUMP_FORCE
 	else:				
 		#animPlayer.play("Jump")

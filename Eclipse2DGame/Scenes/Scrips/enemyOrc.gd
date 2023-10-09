@@ -43,8 +43,8 @@ func start_walk():
 
 
 func _on_PlayerDetector_body_entered(body):
-	animPlayer.play("Attack")		
+	animPlayer.play("Attack")
 
 
-func _on_AttackDetector_body_entered(body):	
-	get_tree().reload_current_scene()		
+func _on_AttackDetector_body_entered(body):
+	get_tree().reload_current_scene()

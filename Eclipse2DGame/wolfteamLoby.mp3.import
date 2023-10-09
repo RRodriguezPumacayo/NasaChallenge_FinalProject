@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/wolfteamLoby.mp3-4e841f6b41a5804ae66de2db65a9eed6.mp3str"
+
+[deps]
+
+source_file="res://wolfteamLoby.mp3"
+dest_files=[ "res://.import/wolfteamLoby.mp3-4e841f6b41a5804ae66de2db65a9eed6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

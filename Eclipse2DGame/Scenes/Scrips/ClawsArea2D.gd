@@ -18,5 +18,6 @@ func _ready():
 
 func _on_ClawsArea2D_body_entered(body):	
 	if body.is_in_group("Enemy"):
+		print("Hit object body")
 		body.queue_free()
 	pass

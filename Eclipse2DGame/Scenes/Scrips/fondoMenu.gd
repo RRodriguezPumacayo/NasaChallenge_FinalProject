@@ -6,8 +6,3 @@ var speed = 300
 
 func _physics_process(delta):
 	scroll_base_offset += DIR * speed * delta
-
-# Esta función se ejecutará cuando se presione el botón "Play"
-func _on_Jugar_pressed():	
-	# Oculta la escena del menú (puedes personalizar esto según tu diseño)
-	hide()

@@ -10,10 +10,28 @@ func _on_Jugar_pressed():
 	get_tree().get_root().add_child(game_instance)
 	
 	# Oculta la escena del menú (puedes personalizar esto según tu diseño)
+	$Menu.stop_sound()
+	$Playing.play()
 	hide()
 
 func _on_Salir_pressed():
+	$Menu.stop_sound()
 	get_tree().quit()
 
 
 
+
+
+func _on_Jugar_mouse_entered():
+	$Boton.play()
+	pass # Replace with function body.
+
+
+func _on_Historia_mouse_entered():
+	$Boton.play()
+	pass # Replace with function body.
+
+
+func _on_Salir_mouse_entered():
+	$Boton.play()
+	pass # Replace with function body.
